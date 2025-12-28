@@ -118,7 +118,7 @@ export default function HeroSection() {
             {/* Bottom Row: API (1), Marketing (2), Remote (2) */}
             {/* Bottom Row: API (1), Marketing (2), Remote (2) */}
             <div className="grid grid-cols-5 md:grid-cols-5 gap-2 md:gap-4 h-auto md:h-64">
-              <motion.div className="col-span-3 md:col-span-1 rounded-3xl overflow-hidden relative group min-h-[160px] md:min-h-[200px] order-2 md:order-none">
+              <motion.div className="col-span-3 md:col-span-2 rounded-3xl overflow-hidden relative group min-h-[160px] md:min-h-[200px] order-2 md:order-none">
                 <img src="/hero-api.jpg" alt="200+ API Ready" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
@@ -127,7 +127,7 @@ export default function HeroSection() {
                 </div>
               </motion.div>
 
-              <motion.div className="col-span-2 md:col-span-2 rounded-3xl overflow-hidden relative group min-h-[160px] md:min-h-[200px] order-1 md:order-none">
+              <motion.div className="col-span-2 md:col-span-1 rounded-3xl overflow-hidden relative group min-h-[160px] md:min-h-[200px] order-1 md:order-none">
                 <img src="/hero-marketing.jpg" alt="Best Marketing" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
