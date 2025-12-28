@@ -63,7 +63,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm py-2 border-b border-gray-100">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm py-2 border-b border-gray-100 font-sans">
         <div className="relative mx-auto flex h-16 max-w-7xl items-center px-4">
           {/* Desktop Logo */}
           <div className="hidden md:flex items-center z-10 cursor-pointer" onClick={() => scrollToSection('home')}>

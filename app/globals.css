@@ -123,3 +123,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@theme {
+  --font-sans: var(--font-inter);
+}

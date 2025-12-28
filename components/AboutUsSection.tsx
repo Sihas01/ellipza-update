@@ -94,7 +94,7 @@ export default function AboutUsSection() {
                                 <img src="/about-gear.png" alt="Gear" className="w-full h-full object-contain" />
                             </div>
 
-                            <div className="mt-14 md:mt-20">
+                            <div className="mt-14 md:mt-20 flex flex-col justify-end h-full ">
                                 <p className="text-[10px] md:text-sm font-bold text-gray-900 mb-1 leading-tight">Powered by smart integrations</p>
                                 <h3 className="text-2xl md:text-4xl font-bold text-[#0f172a] mb-1">$ <Counter from={0} to={3.2} decimals={1} /> <span className="text-lg md:text-2xl text-gray-400 font-medium">M+</span></h3>
                                 <p className="text-[10px] md:text-xs text-gray-400 font-medium leading-tight">Revenue optimized for our clients</p>
