@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Users } from "lucide-react";
 
 export default function AboutUsSection() {
     return (
-        <section id="about" className="py-24 bg-white overflow-hidden">
+        <section id="about" className="py-24 bg-[#F7F9FC] overflow-hidden">
             <div className="container mx-auto px-4 max-w-7xl">
 
                 {/* Header Area */}

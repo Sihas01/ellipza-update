@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative pt-32 pb-20 bg-white overflow-hidden">
+    <section id="home" className="relative pt-32 pb-20 bg-transparent overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Header Content */}
@@ -59,7 +59,7 @@ export default function HeroSection() {
 
         {/* Bento Grid */}
         <div className="max-w-6xl mx-auto">
-       
+
 
           {/* Row 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -192,7 +192,7 @@ export default function HeroSection() {
         {/* Wave Graphic (Simulated) */}
         <div className="absolute top-20 left-0 right-0 h-96 -z-10 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDQwIDMyMCI+PHBhdGggZmlsbD0iIzUzM2JjZSIgZmlsbC1vcGFjaXR5PSIwLjMiIGQ9Ik0wLDE2MEw0OCwxNTRDOTYsMTQ5LDE5MiwxMzksMjg4LDE0OUMzODQsMTYwLDQ4MCwxOTIsNTc2LDE5N0M2NzIsMjAzLDc2OCwxODEsODY0LDE2NkM5NjAsMTQ5LDEwNTYsMTM5LDExNTIsMTMxQzEyNDgsMTIzLDEzNDQsMTE3LDEzOTIsMTE1TDE0NDAsMTEyTDE0NDAsMFgwLDAiPjwvcGF0aD48L3N2Zz4=')] bg-no-repeat bg-cover"></div>
 
-</div>
+      </div>
     </section>
   );
 }

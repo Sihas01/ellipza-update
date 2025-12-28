@@ -4,7 +4,7 @@ import { Facebook, Instagram, Send, Twitter } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#f8f9fc] pt-20 pb-10 relative overflow-hidden">
+        <footer className="bg-white pt-20 pb-10 relative overflow-hidden">
 
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-10">

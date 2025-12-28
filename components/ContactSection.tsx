@@ -5,7 +5,7 @@ import { Mail, Phone, Send } from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="py-24 bg-gray-50 relative overflow-hidden">
+        <section id="contact" className="py-24 bg-[#F7F9FC] relative overflow-hidden">
             {/* Background Decor (Subtle Wave visual approx) */}
             <div className="absolute inset-0 pointer-events-none opacity-40 mix-blend-multiply">
                 <svg className="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

@@ -66,7 +66,7 @@ export default function ExpertiseSection() {
     const activeItem = expertiseList.find((item) => item.id === activeId);
 
     return (
-        <section id="resources" className="py-24 bg-gray-50/50 overflow-hidden">
+        <section id="resources" className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4 max-w-7xl">
 
                 {/* Header */}
