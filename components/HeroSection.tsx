@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import image from "../public/Group.png"
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative pt-32 pb-20 bg-transparent overflow-hidden">
+    <section id="home" className="relative pt-32 pb-20 bg-transparent overflow-hidden isolate">
       <div className="container mx-auto px-4">
 
         {/* Header Content */}
@@ -16,10 +17,14 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-200 bg-white text-purple-600 text-xs font-medium mb-8 shadow-sm"
+            className="inline-flex p-[1px] rounded-full bg-gradient-to-r from-[#7D43A2] to-[#5393DF] mb-8 shadow-sm"
           >
-            <div className="w-1.5 h-1.5 rounded-full bg-purple-600"></div>
-            All your need on one place
+            <div className="px-4 py-1.5 rounded-full bg-white flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#7D43A2] to-[#5393DF]"></div>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7D43A2] to-[#5393DF] text-xs font-bold">
+                All your need on one place
+              </span>
+            </div>
           </motion.div>
 
           {/* Heading */}
@@ -30,7 +35,7 @@ export default function HeroSection() {
             className="text-5xl md:text-7xl font-bold tracking-tight text-[#0f172a] mb-6 leading-[1.1]"
           >
             The Most Powerful Way To <br />
-            Ship <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-500">Scalable Software</span>
+            Ship <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7D43A2] to-[#5393DF]">Scalable Software</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -186,11 +191,13 @@ export default function HeroSection() {
         </div>
 
         {/* Background/Decoration */}
-        <div className="absolute top-0 left-0 w-full h-[600px] -z-10 pointer-events-none overflow-hidden">
-          <div className="absolute -top-[200px] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-purple-100/50 blur-[100px] rounded-[100%]"></div>
+        <div className="absolute top-20 md:top-28 left-0 w-full -z-10 pointer-events-none">
+          <img
+            src={image.src}
+            alt="Hero Wave"
+            className="w-full h-[250px] md:h-auto object-cover md:object-contain opacity-100"
+          />
         </div>
-        {/* Wave Graphic (Simulated) */}
-        <div className="absolute top-20 left-0 right-0 h-96 -z-10 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDQwIDMyMCI+PHBhdGggZmlsbD0iIzUzM2JjZSIgZmlsbC1vcGFjaXR5PSIwLjMiIGQ9Ik0wLDE2MEw0OCwxNTRDOTYsMTQ5LDE5MiwxMzksMjg4LDE0OUMzODQsMTYwLDQ4MCwxOTIsNTc2LDE5N0M2NzIsMjAzLDc2OCwxODEsODY0LDE2NkM5NjAsMTQ5LDEwNTYsMTM5LDExNTIsMTMxQzEyNDgsMTIzLDEzNDQsMTE3LDEzOTIsMTE1TDE0NDAsMTEyTDE0NDAsMFgwLDAiPjwvcGF0aD48L3N2Zz4=')] bg-no-repeat bg-cover"></div>
 
       </div>
     </section>
