@@ -62,7 +62,7 @@ export default function ServicesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="lg:col-span-5 bg-gray-50 rounded-[2.5rem] p-10 flex flex-col justify-between overflow-hidden relative group"
+                            className="lg:col-span-5 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col justify-between overflow-hidden relative group"
                         >
                             <div className="relative z-10">
                                 <h3 className="text-3xl font-bold text-[#0f172a] mb-6">Mobile App <br /> Development</h3>
@@ -88,15 +88,15 @@ export default function ServicesSection() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
-                                className="flex-1 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col gap-6 overflow-hidden relative group"
+                                className="flex-1 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col justify-between gap-6 overflow-hidden relative group"
                             >
                                 <div className="w-full relative z-10">
                                     <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Software Development</h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed ">
+                                    <p className="text-gray-500 text-sm leading-relaxed max-w-md">
                                         We deliver robust, scalable, and secure software solutions—from enterprise applications to custom builds—ensuring high performance and seamless integration.
                                     </p>
                                 </div>
-                                <div className="w-full flex justify-center items-end mt-4">
+                                <div className="w-full flex justify-center items-end mt-auto">
                                     <img src="/service-web-new.png" alt="Software Development" className="h-48 lg:h-52 w-auto object-contain" />
                                 </div>
                             </motion.div>
@@ -107,15 +107,15 @@ export default function ServicesSection() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
-                                className="flex-1 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col gap-6 overflow-hidden relative group"
+                                className="flex-1 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col justify-between gap-6 overflow-hidden relative group"
                             >
                                 <div className="w-full relative z-10">
                                     <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Web Development</h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed ">
+                                    <p className="text-gray-500 text-sm leading-relaxed max-w-md">
                                         We develop responsive, SEO-friendly websites ranging from high-speed static pages to dynamic web applications and comprehensive e-commerce platforms.
                                     </p>
                                 </div>
-                                <div className="w-full flex justify-center items-end mt-4">
+                                <div className="w-full flex justify-center items-end mt-auto">
                                     <img src="/service-laptop.png" alt="Web Development" className="h-48 lg:h-52 w-auto object-contain" />
                                 </div>
                             </motion.div>
@@ -132,16 +132,16 @@ export default function ServicesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.6 }}
-                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
+                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
-                            <div className="w-full relative z-10 ">
+                            <div className="w-full relative z-10">
                                 <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Networking & Infrastructure</h3>
-                                <p className="text-gray-500 text-xs leading-relaxed ">
+                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
                                     We provide expert physical infrastructure solutions, including professional firewall installations and AP switch configurations to ensure secure, high-speed connectivity.
                                 </p>
                             </div>
-                            <div className="w-full flex justify-center items-end mt-4">
-                                <img src="/service-marketing.png" alt="Networking" className="w-full h-auto object-contain" />
+                            <div className="w-full flex justify-center items-end mt-auto">
+                                <img src="/service-marketing.png" alt="Networking" className="w-full h-auto object-contain max-h-[200px]" />
                             </div>
                         </motion.div>
 
@@ -151,16 +151,16 @@ export default function ServicesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.7 }}
-                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
+                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="relative z-10">
                                 <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Artificial  Intelligence</h3>
-                                <p className="text-gray-500 text-xs leading-relaxed ">
+                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
                                     We leverage machine learning and natural language processing to build smart systems that enhance decision-making and provide predictive business insights.
                                 </p>
                             </div>
-                            <div className="w-full flex justify-center items-end mt-4">
-                                <img src="/service-ai-new.png" alt="AI" className="w-full h-auto object-contain" />
+                            <div className="w-full flex justify-center items-end mt-auto">
+                                <img src="/service-ai-new.png" alt="AI" className="w-full h-auto object-contain max-h-[200px]" />
                             </div>
                         </motion.div>
 
@@ -170,16 +170,16 @@ export default function ServicesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.8 }}
-                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
+                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="relative z-10">
                                 <h3 className="text-3xl font-bold text-[#0f172a] mb-4">UI/UX  Design</h3>
-                                <p className="text-gray-500 text-xs leading-relaxed ">
+                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
                                     Our design-first approach ensures every interface is visually appealing and user-friendly, aligning with your brand to maximize satisfaction and engagement.
                                 </p>
                             </div>
-                            <div className="w-full flex justify-center items-end mt-4">
-                                <img src="/service-screens.png" alt="UI/UX" className="w-full h-auto object-contain" />
+                            <div className="w-full flex justify-center items-end mt-auto">
+                                <img src="/service-screens.png" alt="UI/UX" className="w-full h-auto object-contain max-h-[200px]" />
                             </div>
                         </motion.div>
 
@@ -189,16 +189,16 @@ export default function ServicesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.9 }}
-                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
+                            className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="relative z-10 ">
                                 <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Digital Marketing</h3>
-                                <p className="text-gray-500 text-xs leading-relaxed ">
+                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
                                     Our data-driven marketing strategies focus on SEO and brand identity to amplify your online presence and drive measurable growth for your business.
                                 </p>
                             </div>
-                            <div className="w-full flex justify-center items-end mt-4">
-                                <img src="/service-uiux.png" alt="Marketing" className="w-full h-auto object-contain opacity-90" />
+                            <div className="w-full flex justify-center items-end mt-auto">
+                                <img src="/service-uiux.png" alt="Marketing" className="w-full h-auto object-contain opacity-90 max-h-[200px]" />
                             </div>
                         </motion.div>
 

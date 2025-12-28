@@ -27,7 +27,7 @@ function Counter({ from = 0, to, duration = 1.5, decimals = 0 }: { from?: number
 
 export default function AboutUsSection() {
     return (
-        <section id="about" className="py-20 bg-[#F7F9FC] overflow-hidden">
+        <section id="about" className="py-2 md:py-20 bg-[#F7F9FC] overflow-hidden">
             <div className="container mx-auto px-4 max-w-7xl">
 
                 {/* Header Area */}
