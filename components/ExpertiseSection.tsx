@@ -70,7 +70,7 @@ export default function ExpertiseSection() {
             <div className="container mx-auto px-4 max-w-7xl">
 
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-12">
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
                     <div className="max-w-2xl">
                         <motion.span
                             initial={{ opacity: 0, x: -20 }}

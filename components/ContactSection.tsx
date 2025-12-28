@@ -16,7 +16,7 @@ export default function ContactSection() {
             </div>
 
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                <div className="flex flex-col lg:flex-row gap-16">
+                <div className="flex flex-col lg:flex-row gap-4 md:gap-16">
 
                     {/* Left Column: Info */}
                     <div className="lg:w-1/3 pt-10">
@@ -61,14 +61,18 @@ export default function ContactSection() {
                             transition={{ delay: 0.3 }}
                             className="space-y-4"
                         >
-                            <div className="flex items-center gap-3">
-                                <Phone size={20} className="text-[#0f172a]" />
-                                <span className="text-gray-700 font-bold text-sm">+1012 3456 789</span>
+                            <div className=" items-center gap-5 hidden md:flex">
+                                <div className="flex items-center gap-1">
+                                    <Phone size={20} className="text-[#0f172a]" />
+                                    <span className="text-gray-700 font-bold text-sm">+1012 3456 789</span>
+                                </div>
+
+                                <div className="flex items-center gap-1">
+                                    <Mail size={20} className="text-[#0f172a]" />
+                                    <span className="text-gray-700 font-bold text-sm">demo@gmail.com</span>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <Mail size={20} className="text-[#0f172a]" />
-                                <span className="text-gray-700 font-bold text-sm">demo@gmail.com</span>
-                            </div>
+
                         </motion.div>
 
                         {/* Social Icons */}
@@ -77,10 +81,10 @@ export default function ContactSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
-                            className="flex gap-4 mt-8"
+                            className="flex gap-4 mt-8 "
                         >
                             {['facebook', 'twitter', 'instagram'].map((social) => (
-                                <div key={social} className="w-8 h-8 rounded-full bg-[#9333ea] text-white flex items-center justify-center cursor-pointer hover:bg-[#7e22ce] transition-colors shadow-md">
+                                <div key={social} className="w-8 h-8 rounded-full bg-[#9333ea] text-white hidden md:flex items-center justify-center cursor-pointer hover:bg-[#7e22ce] transition-colors shadow-md">
                                     {/* Simple placeholder icons */}
                                     {social === 'facebook' && <span className="font-bold text-sm">f</span>}
                                     {social === 'twitter' && <span className="font-bold text-sm">t</span>}
@@ -151,7 +155,7 @@ export default function ContactSection() {
                                 <textarea placeholder="Write your message.." rows={1} className="w-full bg-transparent outline-none text-gray-600 placeholder-gray-400 resize-none py-1"></textarea>
                             </div>
 
-                            <div className="flex justify-end pt-4">
+                            <div className="flex justify-center pt-4 md:justify-end">
                                 <button type="submit" className="px-8 py-3 rounded-full bg-[#3b82f6] text-white font-medium hover:bg-blue-600 transition-colors flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
                                     <Send size={16} /> <span className="text-sm">Send Message</span>
                                 </button>

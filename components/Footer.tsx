@@ -1,23 +1,20 @@
 "use client";
 
 import { Facebook, Instagram, Send, Twitter } from "lucide-react";
+import logo from "@/public/logo.png";
 
 export default function Footer() {
     return (
         <footer className="bg-white pt-20 pb-10 relative overflow-hidden">
 
             <div className="container mx-auto px-4 max-w-7xl relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-10">
+                <div className="grid grid-cols-2 md:grid-cols-12 gap-y-10 gap-x-4 md:gap-12 mb-10">
 
-                    {/* Brand Column (Span 5) */}
-                    <div className="md:col-span-5 space-y-6">
+                    {/* Brand Column (Span 2 mobile, 5 desktop) */}
+                    <div className="col-span-2 md:col-span-5 space-y-6">
                         <div className="flex items-center gap-3">
                             {/* Logo Icon (Infinity Loop approx) */}
-                            <div className="relative w-12 h-8">
-                                <div className="absolute inset-0 border-2 border-blue-500 rounded-full skew-x-12"></div>
-                                <div className="absolute inset-0 border-2 border-purple-500 rounded-full -skew-x-12 ml-4"></div>
-                            </div>
-                            <span className="text-2xl font-bold tracking-widest text-[#0f172a] uppercase">ELLIPZA</span>
+                            <img src={logo.src} alt="Ellipza Logo" className="h-8 w-auto" />
                         </div>
 
                         <p className="text-gray-400 text-xs font-medium leading-relaxed max-w-sm">
@@ -57,11 +54,11 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Spacer */}
-                    <div className="md:col-span-2"></div>
+                    {/* Spacer (Hidden on mobile) */}
+                    <div className="hidden md:block md:col-span-2"></div>
 
-                    {/* Info Column (Span 2) */}
-                    <div className="md:col-span-2 pt-2">
+                    {/* Info Column (Span 1 mobile, 2 desktop) */}
+                    <div className="col-span-1 md:col-span-2 pt-2">
                         <h4 className="text-[#0f172a] font-bold uppercase mb-6 tracking-wide text-sm">INFO</h4>
                         <ul className="space-y-4">
                             {['Home', 'About Us', 'Services', 'Why Ellipza ?', 'Contact Us'].map((item) => (
@@ -72,8 +69,8 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Contact Column (Span 3) */}
-                    <div className="md:col-span-3 pt-2">
+                    {/* Contact Column (Span 1 mobile, 3 desktop) */}
+                    <div className="col-span-1 md:col-span-3 pt-2 pl-4 md:pl-0">
                         <h4 className="text-[#0f172a] font-bold uppercase mb-6 tracking-wide text-sm">CONTACT US</h4>
                         <div className="space-y-8">
                             <div className="space-y-2">
@@ -112,9 +109,9 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Rights */}
-                <div className="flex flex-col md:flex-row justify-between items-center pt-8 text-[10px] text-gray-500 font-bold tracking-wider uppercase">
+                <div className="flex flex-row justify-between items-center pt-8 text-[9px] md:text-[10px] text-gray-500 font-bold tracking-wider uppercase w-full">
                     <span>ELLIPZA TECHNOLOGIES PVT</span>
-                    <span>ALL RIGHTS RESERVED</span>
+                    <span className="hidden md:inline">ALL RIGHTS RESERVED</span>
                     <span>© 2025 — COPYRIGHT</span>
                 </div>
             </div>
