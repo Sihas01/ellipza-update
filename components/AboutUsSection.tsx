@@ -87,17 +87,17 @@ export default function AboutUsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
-                            className="flex-1 bg-white rounded-3xl p-5 flex flex-col justify-end border border-gray-300 hover:shadow-lg transition-shadow relative overflow-hidden"
+                            className="flex-1 bg-white rounded-3xl p-4 md:p-5 flex flex-col justify-between border border-gray-300 hover:shadow-lg transition-shadow relative overflow-hidden h-[180px] md:h-auto"
                         >
                             {/* Decoration Icon */}
-                            <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-32 h-32">
+                            <div className="absolute -top-6 md:-top-10 left-1/2 transform -translate-x-1/2 w-24 h-24 md:w-32 md:h-32">
                                 <img src="/about-gear.png" alt="Gear" className="w-full h-full object-contain" />
                             </div>
 
-                            <div className="mt-20">
-                                <p className="text-sm font-bold text-gray-900 mb-1">Powered by smart integrations</p>
-                                <h3 className="text-4xl font-bold text-[#0f172a] mb-1">$ <Counter from={0} to={3.2} decimals={1} /> <span className="text-2xl text-gray-400 font-medium">M+</span></h3>
-                                <p className="text-xs text-gray-400 font-medium">Revenue optimized for our clients</p>
+                            <div className="mt-14 md:mt-20">
+                                <p className="text-[10px] md:text-sm font-bold text-gray-900 mb-1 leading-tight">Powered by smart integrations</p>
+                                <h3 className="text-2xl md:text-4xl font-bold text-[#0f172a] mb-1">$ <Counter from={0} to={3.2} decimals={1} /> <span className="text-lg md:text-2xl text-gray-400 font-medium">M+</span></h3>
+                                <p className="text-[10px] md:text-xs text-gray-400 font-medium leading-tight">Revenue optimized for our clients</p>
                             </div>
                         </motion.div>
 
@@ -107,12 +107,12 @@ export default function AboutUsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.5 }}
-                            className="h-16 bg-white rounded-3xl px-5 flex items-center justify-center gap-3 border border-gray-300 shadow-sm"
+                            className="min-h-[3rem] md:h-16 bg-white rounded-2xl md:rounded-3xl px-3 md:px-5 py-2 flex items-center justify-center gap-2 md:gap-3 border border-gray-300 shadow-sm"
                         >
-                            <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center text-white">
-                                <CheckCircle2 size={12} strokeWidth={4} className="text-white" />
+                            <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-green-500 flex items-center justify-center text-white shrink-0">
+                                <CheckCircle2 size={10} strokeWidth={4} className="text-white md:w-3 md:h-3" />
                             </div>
-                            <span className="font-bold text-gray-600 text-sm">Open for collaboration</span>
+                            <span className="font-bold text-gray-600 text-[10px] md:text-sm leading-tight">Open for collaboration</span>
                         </motion.div>
                     </div>
 
@@ -124,17 +124,17 @@ export default function AboutUsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.6 }}
-                            className="h-16 bg-white rounded-3xl px-5 flex items-center gap-3 border border-gray-300 shadow-sm"
+                            className="min-h-[3rem] md:h-16 bg-white rounded-2xl md:rounded-3xl px-3 md:px-5 py-2 flex items-center gap-2 md:gap-3 border border-gray-300 shadow-sm"
                         >
                             {/* Avatar Stack */}
-                            <div className="flex -space-x-2">
+                            <div className="flex -space-x-1.5 md:-space-x-2 shrink-0">
                                 {[1, 2, 3, 4].map((i) => (
-                                    <div key={i} className="w-6 h-6 rounded-full border border-white bg-gray-200 overflow-hidden">
+                                    <div key={i} className="w-5 h-5 md:w-6 md:h-6 rounded-full border border-white bg-gray-200 overflow-hidden">
                                         <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="Avatar" />
                                     </div>
                                 ))}
                             </div>
-                            <span className="font-bold text-gray-600 text-sm whitespace-wrap">Trusted by 500+ CEOs</span>
+                            <span className="font-bold text-gray-600 text-[10px] md:text-sm whitespace-normal leading-tight">Trusted by 500+ CEOs</span>
                         </motion.div>
 
                         {/* Performance Card */}
@@ -143,18 +143,18 @@ export default function AboutUsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.7 }}
-                            className="flex-1 bg-white rounded-3xl p-5 flex flex-col justify-end border border-gray-300 hover:shadow-lg transition-shadow"
+                            className="flex-1 bg-white rounded-3xl p-4 md:p-5 flex flex-col justify-between border border-gray-300 hover:shadow-lg transition-shadow h-[180px] md:h-auto"
                         >
-                            <div className="mb-auto">
-                                <p className="text-sm font-bold text-gray-800 leading-snug">
+                            <div>
+                                <p className="text-[10px] md:text-sm font-bold text-gray-800 leading-snug">
                                     Seamless and <br />
                                     Reliable performance
                                 </p>
                             </div>
 
                             <div>
-                                <h3 className="text-5xl font-bold text-[#0f172a] mb-1"><Counter from={0} to={98} /> <span className="text-3xl">%</span></h3>
-                                <p className="text-xs text-gray-400 uppercase tracking-wider font-bold">Performance up time</p>
+                                <h3 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-1"><Counter from={0} to={98} /> <span className="text-2xl md:text-3xl">%</span></h3>
+                                <p className="text-[10px] md:text-xs text-gray-400 uppercase tracking-wider font-bold">Performance up time</p>
                             </div>
                         </motion.div>
                     </div>
