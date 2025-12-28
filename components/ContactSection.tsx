@@ -5,7 +5,7 @@ import { Mail, Phone, Send } from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="py-5 md:py-24 bg-[#F7F9FC] relative overflow-hidden">
+        <section id="contact" className="py-5 md:py-24 bg-[#F7F9FC] relative overflow-hidden font-sans">
             {/* Background Decor (Subtle Wave visual approx) */}
             <div className="absolute inset-0 pointer-events-none opacity-40 mix-blend-multiply">
                 <svg className="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -19,7 +19,7 @@ export default function ContactSection() {
                 <div className="flex flex-col lg:flex-row gap-4 md:gap-16">
 
                     {/* Left Column: Info */}
-                    <div className="lg:w-1/3 pt-10">
+                    <div className="lg:w-2/5 pt-10">
                         <motion.span
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -100,7 +100,7 @@ export default function ContactSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="lg:w-2/3"
+                        className="lg:w-3/5"
                     >
                         <form className="space-y-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

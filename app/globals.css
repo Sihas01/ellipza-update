@@ -128,3 +128,15 @@
 @theme {
   --font-sans: var(--font-inter);
 }
+
+
+@font-face {
+  font-family: 'Nico Moji';
+  src: url('/fonts/NicoMoji-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nico{
+  font-family: 'Nico Moji', sans-serif;
+}

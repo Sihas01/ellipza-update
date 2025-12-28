@@ -5,7 +5,7 @@ import logo from "@/public/logo.png";
 
 export default function Footer() {
     return (
-        <footer className="bg-white pt-20 pb-10 relative overflow-hidden">
+        <footer className="bg-white pt-20 pb-10 relative overflow-hidden font-sans">
 
             <div className="container mx-auto px-6 md:px-16 lg:px-24 max-w-7xl relative z-10">
                 <div className="grid grid-cols-2 md:grid-cols-12 gap-y-10 gap-x-4 md:gap-12 mb-10">
@@ -17,7 +17,7 @@ export default function Footer() {
                             <img src={logo.src} alt="Ellipza Logo" className="h-8 w-auto" />
                         </div>
 
-                        <p className="text-gray-400 text-xs font-medium leading-relaxed max-w-sm">
+                        <p className="text-gray-400 text-sm  font-medium leading-relaxed ">
                             The first free end-to-end analytics service for the site, designed to work with enterprises of various levels and business segments.
                         </p>
 
@@ -103,7 +103,7 @@ export default function Footer() {
 
                 {/* Large Watermark (Block) */}
                 <div className="w-full flex justify-center items-center opacity-[0.04] select-none pointer-events-none mt-10 mb-4">
-                    <h1 className="text-[15vw] md:text-[180px] lg:text-[240px] font-bold text-black tracking-tighter leading-none text-center">
+                    <h1 className="text-[15vw] md:text-[180px] lg:text-[282px] font-bold text-black tracking-tighter leading-none text-center nico">
                         Ellipza
                     </h1>
                 </div>
