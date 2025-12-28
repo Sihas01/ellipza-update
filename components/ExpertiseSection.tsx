@@ -67,7 +67,7 @@ export default function ExpertiseSection() {
 
     return (
         <section id="resources" className="py-24 bg-white overflow-hidden">
-            <div className="container mx-auto px-4 max-w-7xl">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 max-w-7xl">
 
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">

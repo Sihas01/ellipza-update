@@ -15,7 +15,7 @@ export default function ContactSection() {
                 </svg>
             </div>
 
-            <div className="container mx-auto px-4 max-w-7xl relative z-10">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 max-w-7xl relative z-10">
                 <div className="flex flex-col lg:flex-row gap-4 md:gap-16">
 
                     {/* Left Column: Info */}

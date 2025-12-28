@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
                 <img src="/why-us-wave.png" alt="" className="w-full h-auto opacity-20" />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 max-w-7xl">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 relative z-10 max-w-7xl">
 
                 {/* Header */}
                 <div className="text-center max-w-4xl mx-auto mb-20">

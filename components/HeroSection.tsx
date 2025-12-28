@@ -7,7 +7,7 @@ import image from "../public/Group.png"
 export default function HeroSection() {
   return (
     <section id="home" className="relative pt-32 pb-20 bg-transparent overflow-hidden isolate">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-16 lg:px-24">
 
         {/* Header Content */}
         <div className="text-center max-w-5xl mx-auto mb-16 relative z-10">

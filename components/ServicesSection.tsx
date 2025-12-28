@@ -11,7 +11,7 @@ export default function ServicesSection() {
                 <img src="/services-wave.png" alt="" className="w-full h-auto opacity-60" />
             </div>
 
-            <div className="container mx-auto px-4 max-w-7xl relative z-10">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 max-w-7xl relative z-10">
 
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
