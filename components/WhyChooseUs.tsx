@@ -41,7 +41,10 @@ const features = [
 export default function WhyChooseUs() {
     return (
         <section id="why-us" className="py-24 bg-[#59257A] relative overflow-hidden">
-            {/* Background Decor can be added here if needed, keeping it clean for strict design */}
+            {/* Background Wave */}
+            <div className="absolute top-0 left-0 w-full pointer-events-none z-0">
+                <img src="/why-us-wave.png" alt="" className="w-full h-auto opacity-20" />
+            </div>
 
             <div className="container mx-auto px-4 relative z-10 max-w-7xl">
 

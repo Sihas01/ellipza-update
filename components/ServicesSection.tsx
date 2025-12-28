@@ -6,7 +6,12 @@ import { Code2 } from "lucide-react";
 export default function ServicesSection() {
     return (
         <section id="solution" className="py-24 bg-white relative overflow-hidden">
-            <div className="container mx-auto px-4 max-w-7xl">
+            {/* Background Wave */}
+            <div className="absolute top-0 left-0 w-full pointer-events-none opacity-100 z-0">
+                <img src="/services-wave.png" alt="" className="w-full h-auto opacity-60" />
+            </div>
+
+            <div className="container mx-auto px-4 max-w-7xl relative z-10">
 
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
