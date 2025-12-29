@@ -11,35 +11,35 @@ const expertiseList = [
         title: "Software Engineers",
         role: "Software Engineers",
         description: "Our engineers develop robust, scalable applications that combine technical expertise with creativity to transform complex ideas into functional software.",
-        image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800",
+        image: "/exp1.jpg",
     },
     {
         id: "data",
         title: "Data Scientists",
         role: "Data Scientists",
         description: "Unlocking insights from complex datasets to drive business decisions.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        image: "/exp2.jpg",
     },
     {
         id: "mobile",
         title: "Mobile App Developers",
         role: "Mobile App Developers",
         description: "Creating seamless mobile experiences for iOS and Android platforms.",
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800",
+        image: "/exp3.jpg",
     },
     {
         id: "uiux",
         title: "UI/UX Designers",
         role: "UI/UX Designers",
         description: "Designing intuitive and beautiful interfaces that users love.",
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+        image: "/exp4.jpg",
     },
     {
         id: "ai",
         title: "AI Specialists",
         role: "AI Specialists",
         description: "Pushing the boundaries of what's possible with artificial intelligence.",
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800",
+        image: "/exp5.jpg",
     },
 ];
 
@@ -61,7 +61,7 @@ export default function ExpertiseSection() {
     const activeItem = expertiseList.find((item) => item.id === activeId);
 
     return (
-        <section id="resources" className="py-24 bg-white overflow-hidden">
+        <section id="resources" className="py-24 bg-white overflow-hidden font-sans">
             <div className="container mx-auto px-6 md:px-16 lg:px-24 ">
 
                 {/* Header */}
@@ -71,7 +71,7 @@ export default function ExpertiseSection() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="inline-block text-[#59257A] font-bold tracking-widest text-xs mb-4 uppercase border-l-2 border-[#59257A] pl-3"
+                            className="inline-block text-[#59257A] font-bold tracking-widest text-[16px] mb-4 uppercase border-l-2 border-[#59257A] pl-3"
                         >
                             Meet Our Expertise
                         </motion.span>
@@ -80,15 +80,75 @@ export default function ExpertiseSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-4xl md:text-5xl font-bold text-[#0f172a]"
+                            className="text-4xl md:text-5xl font-bold text-[#b4b4b4] leading-tight"
                         >
-                            Solving Challenges With <br />
-                            Proven <span className="inline-block align-middle bg-yellow-100 p-1 rounded-lg"><div className="w-8 h-8 bg-yellow-400 rounded rotate-12"></div></span> Expertise
+                            <svg width="462" height="39" viewBox="0 0 462 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_i_7_25020)">
+                                    <path d="M0 22.1689H5.96777C6.25488 24.6094 8.79785 26.209 12.0791 26.209C15.3809 26.209 17.6367 24.6299 17.6367 22.4561C17.6367 20.5283 16.2217 19.4619 12.6533 18.6621L8.79785 17.8213C3.34277 16.6523 0.65625 13.8838 0.65625 9.55664C0.65625 4.10156 5.37305 0.492188 11.9766 0.492188C18.8672 0.492188 23.1943 4.04004 23.2969 9.39258H17.4932C17.2881 6.89062 15.0938 5.37305 11.9971 5.37305C8.94141 5.37305 6.89062 6.8291 6.89062 9.02344C6.89062 10.8486 8.32617 11.874 11.7305 12.6533L15.3193 13.4121C21.2461 14.6836 23.8301 17.2266 23.8301 21.7383C23.8301 27.4805 19.1748 31.1104 11.833 31.1104C4.7168 31.1104 0.18457 27.7266 0 22.1689ZM37.2217 31.0693C30.5771 31.0693 26.332 26.8037 26.332 19.585C26.332 12.4688 30.6387 8.1416 37.2217 8.1416C43.8047 8.1416 48.1113 12.4482 48.1113 19.585C48.1113 26.8242 43.8662 31.0693 37.2217 31.0693ZM37.2217 26.4961C40.1543 26.4961 42.0205 24.0146 42.0205 19.6055C42.0205 15.2373 40.1338 12.7148 37.2217 12.7148C34.3096 12.7148 32.4023 15.2373 32.4023 19.6055C32.4023 24.0146 34.2686 26.4961 37.2217 26.4961ZM51.3516 30.5977V1.00488H57.3398V30.5977H51.3516ZM81.4775 8.61328L73.9307 30.5977H67.1631L59.5547 8.61328H65.9736L70.5469 25.3066H70.6699L75.2227 8.61328H81.4775ZM83.6719 30.5977V8.61328H89.6602V30.5977H83.6719ZM86.666 6.19336C84.8613 6.19336 83.4668 4.81934 83.4668 3.09668C83.4668 1.35352 84.8613 0 86.666 0C88.4707 0 89.8652 1.35352 89.8652 3.09668C89.8652 4.81934 88.4707 6.19336 86.666 6.19336ZM93.6592 30.5977V8.61328H99.4424V12.5303H99.5654C100.734 9.80273 103.052 8.20312 106.436 8.20312C111.316 8.20312 114.064 11.2793 114.064 16.4268V30.5977H108.076V17.6777C108.076 14.8066 106.723 13.166 104.036 13.166C101.35 13.166 99.6475 15.1348 99.6475 17.9854V30.5977H93.6592ZM128.01 25.9219C131.004 25.9219 132.911 23.543 132.911 19.5645C132.911 15.6064 131.004 13.0635 128.01 13.0635C125.057 13.0635 123.19 15.5654 123.19 19.5645C123.19 23.584 125.036 25.9219 128.01 25.9219ZM127.907 38.8828C122.124 38.8828 118.207 36.0732 117.735 32.1562H123.601C124.072 33.6738 125.795 34.7197 128.071 34.7197C131.168 34.7197 132.891 32.9971 132.891 30.4541V26.5986H132.768C131.742 28.9365 129.158 30.5361 125.979 30.5361C120.606 30.5361 117.059 26.3936 117.059 19.5234C117.059 12.5508 120.504 8.26465 126.082 8.26465C129.24 8.26465 131.722 9.92578 132.87 12.4482H132.973V8.61328H138.879V30.29C138.879 35.54 134.49 38.8828 127.907 38.8828ZM164.719 31.1104C156.105 31.1104 150.712 25.3477 150.712 15.791C150.712 6.25488 156.146 0.492188 164.719 0.492188C171.835 0.492188 177.249 5.00391 177.721 11.6279H171.691C171.117 7.99805 168.328 5.61914 164.719 5.61914C160.043 5.61914 157.028 9.53613 157.028 15.7705C157.028 22.0869 160.002 25.9834 164.739 25.9834C168.41 25.9834 171.056 23.8301 171.712 20.3232H177.741C177.044 26.9268 171.979 31.1104 164.719 31.1104ZM181.207 30.5977V1.00488H187.093V12.5303H187.216C188.385 9.76172 190.784 8.20312 194.127 8.20312C199.008 8.20312 201.797 11.3613 201.797 16.4473V30.5977H195.809V17.7188C195.809 14.8887 194.414 13.166 191.687 13.166C188.856 13.166 187.195 15.1553 187.195 18.0469V30.5977H181.207ZM214.122 26.6191C216.727 26.6191 218.88 24.917 218.88 22.5381V20.9385L214.245 21.2256C212.01 21.3896 210.738 22.3945 210.738 23.9531C210.738 25.5938 212.092 26.6191 214.122 26.6191ZM212.153 30.9463C207.97 30.9463 204.791 28.2393 204.791 24.2812C204.791 20.2822 207.867 17.9648 213.343 17.6367L218.88 17.3086V15.8525C218.88 13.8018 217.444 12.6123 215.188 12.6123C212.953 12.6123 211.538 13.7197 211.251 15.3398H205.775C206.001 11.0742 209.631 8.1416 215.455 8.1416C221.095 8.1416 224.766 11.0537 224.766 15.4834V30.5977H218.982V27.2344H218.859C217.629 29.5723 214.901 30.9463 212.153 30.9463ZM228.785 30.5977V1.00488H234.773V30.5977H228.785ZM238.957 30.5977V1.00488H244.945V30.5977H238.957ZM258.85 12.5713C256.225 12.5713 254.338 14.5605 254.133 17.3086H263.464C263.341 14.499 261.516 12.5713 258.85 12.5713ZM263.546 23.8711H269.042C268.386 28.1777 264.448 31.0693 259.014 31.0693C252.246 31.0693 248.186 26.7422 248.186 19.708C248.186 12.6943 252.287 8.1416 258.788 8.1416C265.187 8.1416 269.227 12.4688 269.227 19.1543V20.9795H254.071V21.3486C254.071 24.4863 256.061 26.6396 259.116 26.6396C261.311 26.6396 262.992 25.5527 263.546 23.8711ZM272.323 30.5977V8.61328H278.106V12.5303H278.229C279.398 9.80273 281.716 8.20312 285.1 8.20312C289.98 8.20312 292.729 11.2793 292.729 16.4268V30.5977H286.74V17.6777C286.74 14.8066 285.387 13.166 282.7 13.166C280.014 13.166 278.312 15.1348 278.312 17.9854V30.5977H272.323ZM306.674 25.9219C309.668 25.9219 311.575 23.543 311.575 19.5645C311.575 15.6064 309.668 13.0635 306.674 13.0635C303.721 13.0635 301.854 15.5654 301.854 19.5645C301.854 23.584 303.7 25.9219 306.674 25.9219ZM306.571 38.8828C300.788 38.8828 296.871 36.0732 296.399 32.1562H302.265C302.736 33.6738 304.459 34.7197 306.735 34.7197C309.832 34.7197 311.555 32.9971 311.555 30.4541V26.5986H311.432C310.406 28.9365 307.822 30.5361 304.644 30.5361C299.271 30.5361 295.723 26.3936 295.723 19.5234C295.723 12.5508 299.168 8.26465 304.746 8.26465C307.904 8.26465 310.386 9.92578 311.534 12.4482H311.637V8.61328H317.543V30.29C317.543 35.54 313.154 38.8828 306.571 38.8828ZM331.324 12.5713C328.699 12.5713 326.812 14.5605 326.607 17.3086H335.938C335.815 14.499 333.99 12.5713 331.324 12.5713ZM336.021 23.8711H341.517C340.86 28.1777 336.923 31.0693 331.488 31.0693C324.721 31.0693 320.66 26.7422 320.66 19.708C320.66 12.6943 324.762 8.1416 331.263 8.1416C337.661 8.1416 341.701 12.4688 341.701 19.1543V20.9795H326.546V21.3486C326.546 24.4863 328.535 26.6396 331.591 26.6396C333.785 26.6396 335.467 25.5527 336.021 23.8711ZM344.429 15.0732C344.429 10.8896 348.059 8.1416 353.698 8.1416C359.215 8.1416 362.804 10.9307 362.886 15.1963H357.369C357.246 13.4326 355.831 12.3457 353.616 12.3457C351.545 12.3457 350.191 13.2891 350.191 14.7041C350.191 15.791 351.135 16.5293 353.062 16.9805L357.267 17.8828C361.676 18.8672 363.46 20.6104 363.46 23.8916C363.46 28.2188 359.481 31.0693 353.678 31.0693C347.812 31.0693 344.203 28.2393 343.875 23.9531H349.72C350.007 25.7988 351.463 26.8652 353.842 26.8652C356.118 26.8652 357.492 25.9629 357.492 24.5273C357.492 23.4199 356.754 22.8047 354.785 22.333L350.725 21.4307C346.562 20.4873 344.429 18.3135 344.429 15.0732ZM393.012 10.377L387.393 30.5977H381.548L373.714 1.00488H380.133L384.788 22.4355H384.952L390.489 1.00488H395.719L401.256 22.4355H401.42L406.096 1.00488H412.515L404.66 30.5977H398.815L393.196 10.377H393.012ZM415.447 30.5977V8.61328H421.436V30.5977H415.447ZM418.441 6.19336C416.637 6.19336 415.242 4.81934 415.242 3.09668C415.242 1.35352 416.637 0 418.441 0C420.246 0 421.641 1.35352 421.641 3.09668C421.641 4.81934 420.246 6.19336 418.441 6.19336ZM427.034 3.54785H433.022V8.61328H437.083V13.125H433.022V23.6455C433.022 25.3271 433.843 26.127 435.606 26.127C436.14 26.127 436.693 26.0859 437.062 26.0244V30.4336C436.447 30.5771 435.422 30.6797 434.212 30.6797C429.044 30.6797 427.034 28.957 427.034 24.6709V13.125H423.938V8.61328H427.034V3.54785ZM440.508 30.5977V1.00488H446.394V12.5303H446.517C447.686 9.76172 450.085 8.20312 453.428 8.20312C458.309 8.20312 461.098 11.3613 461.098 16.4473V30.5977H455.109V17.7188C455.109 14.8887 453.715 13.166 450.987 13.166C448.157 13.166 446.496 15.1553 446.496 18.0469V30.5977H440.508Z" fill="#D2D2D2" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_i_7_25020" x="0" y="0" width="461.098" height="39.8828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="1" />
+                                        <feGaussianBlur stdDeviation="1" />
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_7_25020" />
+                                    </filter>
+                                </defs>
+                            </svg>
+
+
+                            <span className="text-[#0f172a] inline-flex items-center gap-2">
+                                Proven
+                                <svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-4">
+                                    <g filter="url(#filter0_d_11_20)">
+                                        <g clip-path="url(#clip0_11_20)">
+                                            <path d="M28.9576 0.520836L5.41316 6.82955C4.41252 7.09767 3.81922 8.12531 4.08734 9.12595L10.3961 32.6704C10.6642 33.671 11.6918 34.2643 12.6924 33.9962L36.2369 27.6875C37.2375 27.4194 37.8308 26.3917 37.5627 25.3911L31.254 1.84666C30.9859 0.846022 29.9582 0.252715 28.9576 0.520836Z" fill="#917310" />
+                                            <path d="M27.5314 0.902997L5.29997 6.85988C4.85154 6.98353 4.46977 7.27868 4.23718 7.68153C4.0046 8.08438 3.93988 8.56257 4.05701 9.01275L9.99569 31.1762C10.2446 32.1141 11.2062 32.6693 12.144 32.4204L34.3573 26.4684C35.2952 26.2195 35.8504 25.2579 35.6015 24.32L29.6616 2.15202C29.4363 1.22969 28.5035 0.664351 27.5812 0.889652L27.5314 0.902997Z" fill="#E1B217" />
+                                            <path opacity="0.3" d="M12.2241 7.16416C12.0846 6.64347 11.6799 6.58205 9.6153 7.20805C7.8903 7.74305 7.08462 8.17731 6.73377 8.95072C6.38293 9.72413 6.59286 11.0509 6.98271 12.5965C7.27389 13.6831 7.54686 14.7019 8.11283 14.5502C8.88255 14.344 8.40333 12.5555 8.77032 11.3895C9.46507 9.09239 12.4061 7.84333 12.2241 7.16416Z" fill="#FAFAFA" />
+                                            <g clip-path="url(#clip1_11_20)">
+                                                <path d="M19.516 11.2513C20.0709 10.5214 20.8181 10.0129 21.7503 9.72787C22.2626 9.57123 22.8661 9.53456 23.5652 9.6321C24.262 9.72253 24.846 9.90193 25.3171 10.1703C26.3285 10.8571 26.9587 11.8238 27.2218 13.0662C27.4778 14.3107 27.3686 15.379 26.8829 16.259L23.133 23.3114C23.0392 23.4879 22.888 23.6042 22.6887 23.6651C22.4895 23.726 22.3062 23.712 22.1297 23.6181C22.0441 23.5735 21.9687 23.5116 21.9082 23.4363C21.8477 23.3611 21.8034 23.2741 21.7781 23.1809C21.7172 22.9817 21.729 22.7913 21.8229 22.6148L24.0906 18.3499C24.2206 18.1389 24.1706 17.9753 23.9383 17.8517C23.706 17.7282 23.5423 17.7783 23.4402 18.004L21.1725 22.2689C21.1269 22.3554 21.0639 22.4315 20.9874 22.4924C20.9109 22.5533 20.8227 22.5976 20.7282 22.6227C20.5289 22.6836 20.3457 22.6696 20.1691 22.5757C20.0835 22.531 20.0081 22.4691 19.9476 22.3939C19.8871 22.3186 19.8428 22.2317 19.8176 22.1385C19.7567 21.9392 19.7685 21.7489 19.8624 21.5723L22.1301 17.3074C22.2678 17.0708 22.2134 16.8929 21.9669 16.7737C21.7488 16.6459 21.5923 16.6937 21.4688 16.926L19.2119 21.2265C19.1653 21.3122 19.102 21.3876 19.0256 21.4484C18.9493 21.5091 18.8616 21.554 18.7676 21.5802C18.5684 21.6411 18.378 21.6293 18.1872 21.5398C18.0036 21.4481 17.8824 21.3062 17.8214 21.1069C17.7605 20.9077 17.7844 20.7058 17.8931 20.5014L20.1657 16.2272C20.2892 15.9949 20.2392 15.8313 20.0134 15.7291C19.7877 15.6269 19.6169 15.6791 19.5082 15.8836L17.2093 20.1736C17.0962 20.3638 16.9565 20.4921 16.7786 20.5465C16.5794 20.6074 16.3868 20.5884 16.213 20.4782C16.0343 20.3772 15.9109 20.2281 15.85 20.0289C15.7891 19.8296 15.8102 19.6442 15.9041 19.4677C17.4115 16.6102 18.3518 14.8754 18.7141 14.2277L22.0132 15.9581C22.3712 16.1365 22.7328 16.1738 23.1242 16.0542C23.6223 15.9019 23.9528 15.583 24.1227 15.0953C24.2327 14.7426 24.206 14.4006 24.0403 14.0622C23.8746 13.7238 23.6338 13.4706 23.3157 13.2955L19.516 11.2513ZM22.359 15.3077L18.3986 13.1959L14.9007 19.7744C14.118 19.3523 13.4936 18.5317 13.0303 17.296C12.5691 16.0675 12.5778 14.8743 13.0536 13.7329C13.6437 12.6343 14.5237 11.8984 15.6978 11.5394C16.8791 11.1782 18.013 11.2984 19.0881 11.8879L23.0556 13.9975C23.2322 14.0914 23.3463 14.2355 23.4072 14.4347C23.4681 14.634 23.4563 14.8244 23.3624 15.0009C23.2664 15.1703 23.1244 15.2915 22.911 15.3568C22.7188 15.4155 22.5334 15.3944 22.359 15.3077Z" fill="white" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_11_20" x="-0.414307" y="1.61627e-05" width="42.5017" height="43.4973" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dy="5" />
+                                            <feGaussianBlur stdDeviation="2" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_20" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11_20" result="shape" />
+                                        </filter>
+                                        <clipPath id="clip0_11_20">
+                                            <rect x="3.58569" y="7.2914" width="28.1718" height="28.1657" rx="2" transform="rotate(-15 3.58569 7.2914)" fill="white" />
+                                        </clipPath>
+                                        <clipPath id="clip1_11_20">
+                                            <rect width="17.859" height="17.859" fill="white" transform="translate(9.58569 11.2215) rotate(-17)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+
+                                Expertise
+                            </span>
                         </motion.h2>
                     </div>
-
-                    <div className="max-w-md text-gray-500 text-sm leading-relaxed">
-                        At Ellipza Technologies, our strength lies in the diversity and expertise of our team. We bring together a group of dedicated professionals with a shared passion for innovation and a commitment to delivering exceptional results.
+                    <div className="max-w-xl pt-2 ">
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="text-[#616161]  text-sm lg:text-base font-medium tracking-[0.02em] text-justify"
+                        >
+                            At Ellipza Technologies, our strength lies in the diversity and expertise of our team. We bring together a group of dedicated professionals with a shared passion for innovation and a commitment to delivering exceptional results.
+                        </motion.p>
                     </div>
                 </div>
 
@@ -109,7 +169,7 @@ export default function ExpertiseSection() {
                         `}</style>
 
                         {/* Featured / Active Card */}
-                        <div className="flex-none w-[70vw] md:flex-1 lg:flex-[1.5] h-[400px] lg:h-full snap-center">
+                        <div className="flex-none w-[70vw] md:flex-1 lg:flex-[1.5] h-[400px]  snap-center">
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={activeItem?.id}
@@ -142,7 +202,7 @@ export default function ExpertiseSection() {
                                     key={item.id}
                                     layout
                                     onClick={() => setActiveId(item.id)}
-                                    className="relative flex-none w-24 md:w-28 lg:w-32 h-[400px] lg:h-full rounded-[2rem] md:rounded-[2rem] overflow-hidden cursor-pointer group hover:shadow-xl transition-all duration-300 snap-center"
+                                    className="relative flex-none w-24 md:w-28 lg:w-32 h-[400px] rounded-[2rem] md:rounded-[2rem] overflow-hidden cursor-pointer group hover:shadow-xl transition-all duration-300 snap-center"
                                 >
                                     <img
                                         src={item.image}
@@ -171,10 +231,10 @@ export default function ExpertiseSection() {
                                 transition={{ duration: 0.3 }}
                                 className="space-y-4"
                             >
-                                <h3 className="text-3xl md:text-4xl font-bold text-[#0f172a]">
+                                <h3 className="text-3xl md:text-[24px] font-bold text-[#0f172a]">
                                     {activeItem?.title}
                                 </h3>
-                                <p className="text-gray-500 text-base md:text-lg max-w-2xl leading-relaxed">
+                                <p className="text-[#616161]  text-sm lg:text-[15px] font-medium tracking-[0.02em] text-justify">
                                     {activeItem?.description}
                                 </p>
                             </motion.div>
