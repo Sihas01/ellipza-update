@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className="bg-white pt-20 pb-10 relative overflow-hidden font-sans">
 
-            <div className="container mx-auto px-6 md:px-16 lg:px-24 max-w-7xl relative z-10">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 relative z-10">
                 <div className="grid grid-cols-2 md:grid-cols-12 gap-y-10 gap-x-4 md:gap-12 mb-10">
 
                     {/* Brand Column (Span 2 mobile, 5 desktop) */}

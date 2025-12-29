@@ -5,7 +5,7 @@ import { Code2 } from "lucide-react";
 
 export default function ServicesSection() {
     return (
-        <section id="solution" className="py-24 bg-white relative overflow-hidden">
+        <section id="solution" className="py-24 bg-white relative overflow-hidden font-sans">
             {/* Background Wave */}
             <div className="absolute top-0 left-0 w-full pointer-events-none opacity-100 z-0">
                 <img src="/services-wave.png" alt="" className="w-full h-auto opacity-60" />
@@ -110,16 +110,16 @@ export default function ServicesSection() {
                             className="lg:col-span-5 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col justify-between overflow-hidden relative group"
                         >
                             <div className="relative z-10">
-                                <h3 className="text-3xl font-bold text-[#0f172a] mb-6">Mobile App <br /> Development</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-sm">
+                                <h3 className="text-[32px] font-bold text-[#111827] mb-6">Mobile App <br /> Development</h3>
+                                <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                     Our team creates feature-rich iOS and Android applications that combine advanced functionality with intuitive design for an engaging user experience.
                                 </p>
                             </div>
 
                             {/* Fixed: Use margin-top (mt-12) instead of translate-y-12 to strictly occupy layout space and prevent overlap */}
                             <div className="relative w-full flex justify-center mt-auto pt-8">
-                                <div className="w-[85%] mt-12 group-hover:-translate-y-4 transition-transform duration-500">
-                                    <img src="/service-mobile-new.png" alt="Mobile App" className="w-full h-auto object-contain drop-shadow-2xl" />
+                                <div className="w-[85%] mt-12">
+                                    <img src="/mobileImg.png" alt="Mobile App" className="w-full h-auto object-contain drop-shadow-2xl" />
                                 </div>
                             </div>
                         </motion.div>
@@ -136,13 +136,13 @@ export default function ServicesSection() {
                                 className="flex-1 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col justify-between gap-6 overflow-hidden relative group"
                             >
                                 <div className="w-full relative z-10">
-                                    <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Software Development</h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed max-w-md">
+                                    <h3 className="text-[32px] font-bold text-[#111827] mb-6">Software Development</h3>
+                                    <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                         We deliver robust, scalable, and secure software solutions—from enterprise applications to custom builds—ensuring high performance and seamless integration.
                                     </p>
                                 </div>
                                 <div className="w-full flex justify-center items-end mt-auto">
-                                    <img src="/service-web-new.png" alt="Software Development" className="h-48 lg:h-52 w-auto object-contain" />
+                                    <img src="/softwareDevImg.png" alt="Software Development" className="h-48 lg:h-52 w-auto object-contain" />
                                 </div>
                             </motion.div>
 
@@ -155,13 +155,13 @@ export default function ServicesSection() {
                                 className="flex-1 bg-gray-50 rounded-[2.5rem] p-10 pb-0 flex flex-col justify-between gap-6 overflow-hidden relative group"
                             >
                                 <div className="w-full relative z-10">
-                                    <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Web Development</h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed max-w-md">
+                                    <h3 className="text-[32px] font-bold text-[#111827] mb-6">Web Development</h3>
+                                    <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                         We develop responsive, SEO-friendly websites ranging from high-speed static pages to dynamic web applications and comprehensive e-commerce platforms.
                                     </p>
                                 </div>
                                 <div className="w-full flex justify-center items-end mt-auto">
-                                    <img src="/service-laptop.png" alt="Web Development" className="h-48 lg:h-52 w-auto object-contain" />
+                                    <img src="/webDevImg.png" alt="Web Development" className="h-48 lg:h-52 w-auto object-contain" />
                                 </div>
                             </motion.div>
 
@@ -179,14 +179,14 @@ export default function ServicesSection() {
                             transition={{ delay: 0.6 }}
                             className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
-                            <div className="w-full relative z-10">
-                                <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Networking & Infrastructure</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+                            <div className="w-full relative z-10 mb-4">
+                                <h3 className="text-[32px] font-bold text-[#111827] mb-6">Networking & Infrastructure</h3>
+                                <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                     We provide expert physical infrastructure solutions, including professional firewall installations and AP switch configurations to ensure secure, high-speed connectivity.
                                 </p>
                             </div>
                             <div className="w-full flex justify-center items-end mt-auto">
-                                <img src="/service-marketing.png" alt="Networking" className="w-full h-auto object-contain max-h-[200px]" />
+                                <img src="/networkingImg.png" alt="Networking" className="w-full h-auto object-contain max-h-[200px]" />
                             </div>
                         </motion.div>
 
@@ -199,13 +199,13 @@ export default function ServicesSection() {
                             className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="relative z-10">
-                                <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Artificial  Intelligence</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+                                <h3 className="text-[32px] font-bold text-[#111827] mb-6">Artificial  Intelligence</h3>
+                                <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                     We leverage machine learning and natural language processing to build smart systems that enhance decision-making and provide predictive business insights.
                                 </p>
                             </div>
                             <div className="w-full flex justify-center items-end mt-auto">
-                                <img src="/service-ai-new.png" alt="AI" className="w-full h-auto object-contain max-h-[200px]" />
+                                <img src="/aiImg.png" alt="AI" className="w-full h-auto object-contain max-h-[200px]" />
                             </div>
                         </motion.div>
 
@@ -218,13 +218,13 @@ export default function ServicesSection() {
                             className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="relative z-10">
-                                <h3 className="text-3xl font-bold text-[#0f172a] mb-4">UI/UX  Design</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+                                <h3 className="text-[32px] font-bold text-[#111827] mb-6">UI/UX  Design</h3>
+                                <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                     Our design-first approach ensures every interface is visually appealing and user-friendly, aligning with your brand to maximize satisfaction and engagement.
                                 </p>
                             </div>
                             <div className="w-full flex justify-center items-end mt-auto">
-                                <img src="/service-screens.png" alt="UI/UX" className="w-full h-auto object-contain max-h-[200px]" />
+                                <img src="/uiuxImg.png" alt="UI/UX" className="w-full h-auto object-contain max-h-[200px]" />
                             </div>
                         </motion.div>
 
@@ -237,13 +237,13 @@ export default function ServicesSection() {
                             className="bg-gray-50 rounded-[2.5rem] p-10 pb-0 min-h-[340px] flex flex-col justify-between relative overflow-hidden group hover:shadow-lg transition-shadow duration-300"
                         >
                             <div className="relative z-10 ">
-                                <h3 className="text-3xl font-bold text-[#0f172a] mb-4">Digital Marketing</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+                                <h3 className="text-[32px] font-bold text-[#111827] mb-6">Digital Marketing</h3>
+                                <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
                                     Our data-driven marketing strategies focus on SEO and brand identity to amplify your online presence and drive measurable growth for your business.
                                 </p>
                             </div>
                             <div className="w-full flex justify-center items-end mt-auto">
-                                <img src="/service-uiux.png" alt="Marketing" className="w-full h-auto object-contain opacity-90 max-h-[200px]" />
+                                <img src="/marketingImg.png" alt="Marketing" className="w-full h-auto object-contain opacity-90 max-h-[200px]" />
                             </div>
                         </motion.div>
 
