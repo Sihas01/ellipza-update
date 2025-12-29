@@ -259,7 +259,10 @@ export default function AboutUsSection() {
                                 <p className="text-white text-sm font-medium mt-3">Projects completed <br /> successfully</p>
                             </div>
 
-                            <button className="px-6 py-3 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium flex items-center gap-2 group-hover:gap-3 transition-all cursor-pointer">
+                            <button className="px-6 py-3 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors text-white font-medium flex items-center gap-2 group-hover:gap-3 transition-all cursor-pointer" onClick={() => {
+                                const section = document.getElementById("solution");
+                                section?.scrollIntoView({ behavior: "smooth" });
+                            }}>
                                 More <ArrowRight size={18} />
                             </button>
                         </div>

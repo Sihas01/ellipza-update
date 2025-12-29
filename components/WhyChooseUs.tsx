@@ -9,7 +9,7 @@ const features = [
         title: "Big Data Analysis",
         description: "We analyze large data sets to reveal patterns and trends.",
         stats: "500+ Projects",
-        iconBg: "bg-[#DCCAE9]", 
+        iconBg: "bg-[#DCCAE9]",
         iconColor: "text-[#F43F5E]",
     },
     {
@@ -136,7 +136,11 @@ export default function WhyChooseUs() {
                     <h3 className="text-white font-bold uppercase tracking-wide text-sm md:text-[15px]">
                         You might be like to join with us
                     </h3>
-                    <button className="px-8 py-3 rounded-full bg-[#3b82f6] text-white font-semibold hover:bg-blue-600 transition-colors flex items-center gap-2 shadow-lg text-sm md:text-base">
+                    <button className="px-8 py-3 rounded-full bg-[#3b82f6] text-white font-semibold hover:bg-blue-600 transition-colors flex items-center gap-2 shadow-lg text-sm md:text-base cursor-pointer"
+                        onClick={() => {
+                            const section = document.getElementById("contact");
+                            section?.scrollIntoView({ behavior: "smooth" });
+                        }}>
                         Contact <ArrowRight size={18} />
                     </button>
                 </div>

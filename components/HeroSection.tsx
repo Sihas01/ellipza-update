@@ -56,8 +56,11 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <button className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#0f172a] text-white font-medium hover:bg-gray-800 transition-all hover:gap-3">
-              Get Started <ArrowRight size={18} />
+            <button className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#0f172a] text-white font-medium hover:bg-gray-800 transition-all hover:gap-3 cursor-pointer" onClick={() => {
+                const section = document.getElementById("contact");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}>
+              Get Started <ArrowRight size={18}  />
             </button>
           </motion.div>
         </div>

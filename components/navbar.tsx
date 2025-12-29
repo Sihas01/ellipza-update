@@ -82,7 +82,7 @@ export default function Navbar() {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`relative px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${isActive ? "text-white bg-[#0f172a] shadow-md" : "text-gray-600 hover:bg-gray-50"
+                    className={`relative px-4 py-1.5 rounded-full text-sm font-medium transition-all cursor-pointer duration-300 ${isActive ? "text-white bg-[#0f172a] shadow-md" : "text-gray-600 hover:bg-gray-50"
                       }`}
                   >
                     {item.name}
@@ -94,7 +94,12 @@ export default function Navbar() {
 
           {/* Right Button (Desktop) */}
           <div className="hidden md:block ml-auto z-10">
-            <button className="px-6 py-2 rounded-full bg-[#59257A] text-white text-sm font-medium hover:bg-[#4a1f66] transition-colors shadow-sm">
+            <button className="px-6 py-2 rounded-full bg-[#59257A] text-white text-sm font-medium hover:bg-[#4a1f66] transition-colors shadow-sm cursor-pointer"
+              onClick={() => {
+                const section = document.getElementById("contact");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Get Started
             </button>
           </div>
@@ -134,9 +139,9 @@ export default function Navbar() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeSection === item.id
-                      ? "bg-gray-100 text-[#59257A]"
-                      : "text-gray-600 hover:bg-gray-50"
+                  className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors cursor-pointer ${activeSection === item.id
+                    ? "bg-gray-100 text-[#59257A]"
+                    : "text-gray-600 hover:bg-gray-50"
                     }`}
                 >
                   {item.name}
@@ -144,7 +149,11 @@ export default function Navbar() {
               ))}
 
               <div className="pt-2">
-                <button className="w-full px-4 py-3 rounded-lg bg-[#59257A] text-white text-sm font-medium shadow-sm">
+                <button className="w-full px-4 py-3 rounded-lg bg-[#59257A] text-white text-sm font-medium shadow-sm cursor-pointer"
+                  onClick={() => {
+                    const section = document.getElementById("contact");
+                    section?.scrollIntoView({ behavior: "smooth" });
+                  }}>
                   Get Started
                 </button>
               </div>
