@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "@/public/logo.png";
+import logoMobile from "@/public/logoMobile.png";
+
 
 interface NavItem {
   name: string;
@@ -67,7 +69,7 @@ export default function Navbar() {
         <div className="relative mx-auto flex h-16  items-center px-6 md:px-16 lg:px-24">
           {/* Desktop Logo */}
           <div className="hidden md:flex items-center z-10 cursor-pointer" onClick={() => scrollToSection('home')}>
-            <img src={logo.src} alt="Ellipza Logo" className="h-8 w-auto" />
+            <img src={logo.src} alt="Ellipza Logo" className="h-[48px] w-auto" />
           </div>
 
           {/* Center Nav (Desktop) */}
@@ -109,7 +111,7 @@ export default function Navbar() {
             </button>
 
             {/* Logo Center */}
-            <img src={logo.src} alt="Ellipza Logo" className="h-8 mx-auto" />
+            <img src={logoMobile.src} alt="Ellipza Logo" className="h-[44px] mx-auto" />
 
             {/* Placeholder for right */}
             <div className="w-6" />

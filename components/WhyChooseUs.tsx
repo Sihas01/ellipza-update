@@ -1,52 +1,52 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Database, ShieldCheck, Zap, Monitor } from "lucide-react";
+import { ArrowRight, Database, ShieldCheck, Zap, Monitor, HouseWifi } from "lucide-react";
 
 const features = [
     {
-        icon: Database,
+        icon: HouseWifi,
         title: "Big Data Analysis",
         description: "We analyze large data sets to reveal patterns and trends.",
         stats: "500+ Projects",
-        iconBg: "bg-[#F43F5E]", // Pinkish red
-        iconColor: "text-white",
+        iconBg: "bg-[#DCCAE9]", 
+        iconColor: "text-[#F43F5E]",
     },
     {
-        icon: ShieldCheck,
+        icon: HouseWifi,
         title: "Secure Systems",
         description: "Ensuring your infrastructure is safe from modern threats.",
         stats: "500+ Projects",
-        iconBg: "bg-[#10B981]", // Emerald
-        iconColor: "text-white",
+        iconBg: "bg-[#DCCAE9]", // Emerald
+        iconColor: "text-[#10B981]",
     },
     {
-        icon: Zap,
+        icon: HouseWifi,
         title: "Fast Performance",
         description: "Optimized solutions for maximum speed and efficiency.",
         stats: "500+ Projects",
-        iconBg: "bg-[#6366F1]", // Indigo
-        iconColor: "text-white",
+        iconBg: "bg-[#DCCAE9]", // Indigo
+        iconColor: "text-[#6366F1]",
     },
     {
-        icon: Monitor,
+        icon: HouseWifi,
         title: "Tech Support",
         description: "24/7 technical assistance for all your business needs.",
         stats: "500+ Projects",
-        iconBg: "bg-[#F97316]", // Orange
-        iconColor: "text-white",
+        iconBg: "bg-[#DCCAE9]", // Orange
+        iconColor: "text-[#F97316]",
     },
 ];
 
 export default function WhyChooseUs() {
     return (
-        <section id="why-us" className="py-24 bg-[#59257A] relative overflow-hidden">
+        <section id="why-us" className="py-24 bg-[#59257A] relative overflow-hidden font-sans">
             {/* Background Wave */}
-            <div className="absolute top-0 left-0 w-full pointer-events-none z-0">
-                <img src="/why-us-wave.png" alt="" className="w-full h-auto opacity-20" />
+            <div className="absolute left-0 w-full pointer-events-none z-0 mt-30">
+                <img src="/why-us-wave.png" alt="" className="w-full h-auto opacity-100" />
             </div>
 
-            <div className="container mx-auto px-6 md:px-16 lg:px-24 relative z-10 max-w-7xl">
+            <div className="container mx-auto px-6 md:px-16 lg:px-24 relative z-10">
 
                 {/* Header */}
                 <div className="text-center max-w-4xl mx-auto mb-20">
@@ -56,8 +56,8 @@ export default function WhyChooseUs() {
                         viewport={{ once: true }}
                         className="flex items-center justify-center gap-3 mb-4"
                     >
-                        <span className="w-1 h-6 bg-white/30 block"></span>
-                        <span className="text-white font-bold tracking-widest text-sm uppercase">
+                        <span className="w-1 h-6 bg-white block"></span>
+                        <span className="text-white font-bold tracking-widest text-[16px] uppercase">
                             Why Choose Us
                         </span>
                     </motion.div>
@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-purple-100 text-sm md:text-base max-w-3xl mx-auto font-light leading-relaxed opacity-90"
+                        className="text-purple-100 text-sm md:text-[15px] max-w-3xl mx-auto font-medium leading-relaxed opacity-90"
                     >
                         "To revolutionize the digital landscape by delivering innovative, reliable, and user-centric technology solutions that empower businesses and individuals worldwide."
                     </motion.p>
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
 
                 {/* Bottom CTA */}
                 <div className="mt-12 md:mt-20 flex flex-col md:flex-row items-center justify-between pt-8 md:pt-10 px-4 text-center md:text-left gap-6 md:gap-0">
-                    <h3 className="text-white font-bold uppercase tracking-wide text-sm md:text-lg">
+                    <h3 className="text-white font-bold uppercase tracking-wide text-sm md:text-[15px]">
                         You might be like to join with us
                     </h3>
                     <button className="px-8 py-3 rounded-full bg-[#3b82f6] text-white font-semibold hover:bg-blue-600 transition-colors flex items-center gap-2 shadow-lg text-sm md:text-base">

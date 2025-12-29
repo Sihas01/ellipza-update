@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="col-span-2 md:col-span-5 space-y-6">
                         <div className="flex items-center gap-3">
                             {/* Logo Icon (Infinity Loop approx) */}
-                            <img src={logo.src} alt="Ellipza Logo" className="h-8 w-auto" />
+                            <img src={logo.src} alt="Ellipza Logo" className="h-[72px] w-auto" />
                         </div>
 
                         <p className="text-[#848484] text-[16px]  font-medium leading-relaxed ">
