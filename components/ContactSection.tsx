@@ -5,7 +5,7 @@ import { Mail, Phone, Send } from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="py-5 md:py-24 bg-[#F7F9FC] relative overflow-hidden font-sans">
+        <section id="contact" className="py-5 md:py-24 bg-[#F6F6F6] relative overflow-hidden font-sans">
             {/* Background Wave */}
             <div className="absolute top-0 left-0 w-full pointer-events-none opacity-100 z-0">
                 <img src="/contact-wave.png" alt="" className="w-full h-auto opacity-80" />
