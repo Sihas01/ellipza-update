@@ -122,9 +122,7 @@ export default function WhyChooseUs() {
                                 </p>
 
                                 <div className="mt-4 md:mt-8 pt-2 md:pt-4">
-                                    <span className="text-gray-800 font-bold text-[10px] md:text-sm tracking-wide block opacity-70">
-                                        {feature.stats}
-                                    </span>
+                                   
                                 </div>
                             </div>
                         </motion.div>

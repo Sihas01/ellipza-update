@@ -107,13 +107,13 @@ export default function Footer() {
                         <div className="space-y-8">
                             <div className="space-y-2">
                                 <p className="text-gray-400 text-[16px] font-semibold">+94 717 083 004</p>
-                                <p className="text-gray-400 text-[16px] font-semibold">example@domain.com</p>
+                                <p className="text-gray-400 text-[16px] font-semibold">ellipza@gmail.com</p>
                             </div>
 
                             <div className="space-y-2">
                                 <h4 className="text-[#0f172a] font-bold uppercase mb-2 tracking-wide text-[16px]">LOCATION</h4>
                                 <p className="text-gray-400 text-[16px] font-semibold leading-relaxed">
-                                    40, Henry pamunuwa mw, Pamunuwa road, Maharagama<br />
+                                    40, Henry pamunuwa mw, Pamunuwa Road, Maharagama<br />
                                     Sri Lanka
                                 </p>
                             </div>
@@ -154,7 +154,7 @@ export default function Footer() {
 
                 {/* Bottom Rights */}
                 <div className="flex flex-row justify-between items-center pt-8 text-[9px] md:text-[12px] text-gray-500 font-semibold tracking-wider uppercase w-full">
-                    <span>ELLIPZA TECHNOLOGIES PVT</span>
+                    <span>ELLIPZA TECHNOLOGIES (PVT) LTD</span>
                     <span className="hidden md:inline">ALL RIGHTS RESERVED</span>
                     <span>© 2025 — COPYRIGHT</span>
                 </div>

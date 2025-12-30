@@ -127,7 +127,7 @@ export default function AboutUsSection() {
                             transition={{ delay: 0.2 }}
                             className="font-bold text-[#000000] mb-4 uppercase text-sm tracking-wide"
                         >
-                            Our Mission
+                            Our Vision
                         </motion.h3>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}

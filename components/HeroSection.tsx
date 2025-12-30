@@ -22,7 +22,7 @@ export default function HeroSection() {
             <div className="px-4 py-1.5 rounded-full bg-white flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#7D43A2] to-[#5393DF]"></div>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7D43A2] to-[#5393DF] text-xs font-bold">
-                All your need on one place
+                Empowering Innovation, Elevating Experiences
               </span>
             </div>
           </motion.div>
