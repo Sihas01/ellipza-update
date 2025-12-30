@@ -84,11 +84,20 @@ export default function Footer() {
                     <div className="col-span-1 md:col-span-2 pt-2">
                         <h4 className="text-[#0f172a] font-bold uppercase mb-6 tracking-wide text-[16px]">INFO</h4>
                         <ul className="space-y-4">
-                            {['Home', 'About Us', 'Services', 'Why Ellipza ?', 'Contact Us'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-gray-400 text-[16px] font-semibold hover:text-gray-900 transition-colors">{item}</a>
-                                </li>
-                            ))}
+                            {['Home', 'About Us', 'Services', 'Why Ellipza ?', 'Contact Us'].map((item) => {
+                                const hrefs: { [key: string]: string } = {
+                                    'Home': '#home',
+                                    'About Us': '#about',
+                                    'Services': '#solution',
+                                    'Why Ellipza ?': '#why-us',
+                                    'Contact Us': '#contact'
+                                };
+                                return (
+                                    <li key={item}>
+                                        <a href={hrefs[item] || "#"} className="text-gray-400 text-[16px] font-semibold hover:text-gray-900 transition-colors">{item}</a>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
 
