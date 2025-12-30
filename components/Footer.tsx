@@ -97,14 +97,14 @@ export default function Footer() {
                         <h4 className="text-[#0f172a] font-bold uppercase mb-6 tracking-wide text-[16px]">CONTACT US</h4>
                         <div className="space-y-8">
                             <div className="space-y-2">
-                                <p className="text-gray-400 text-[16px] font-semibold">+11 - 13134324134</p>
+                                <p className="text-gray-400 text-[16px] font-semibold">+94 717 083 004</p>
                                 <p className="text-gray-400 text-[16px] font-semibold">example@domain.com</p>
                             </div>
 
                             <div className="space-y-2">
                                 <h4 className="text-[#0f172a] font-bold uppercase mb-2 tracking-wide text-[16px]">LOCATION</h4>
                                 <p className="text-gray-400 text-[16px] font-semibold leading-relaxed">
-                                    12, ABC Main Street, Colombo<br />
+                                    40, Henry pamunuwa mw, Pamunuwa road, Maharagama<br />
                                     Sri Lanka
                                 </p>
                             </div>

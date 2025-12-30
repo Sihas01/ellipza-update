@@ -6,32 +6,32 @@ import { ArrowRight, Database, ShieldCheck, Zap, Monitor, HouseWifi } from "luci
 const features = [
     {
         icon: HouseWifi,
-        title: "Big Data Analysis",
-        description: "We analyze large data sets to reveal patterns and trends.",
+        title: "Client-Centric Approach",
+        description: "We prioritize your needs, ensuring solutions that align with your goals.",
         stats: "500+ Projects",
         iconBg: "bg-[#DCCAE9]",
         iconColor: "text-[#F43F5E]",
     },
     {
         icon: HouseWifi,
-        title: "Secure Systems",
-        description: "Ensuring your infrastructure is safe from modern threats.",
+        title: "Innovation & Expertise",
+        description: "Our team stays updated with the latest technologies and trends to provide cutting-edge solutions.",
         stats: "500+ Projects",
         iconBg: "bg-[#DCCAE9]", // Emerald
         iconColor: "text-[#10B981]",
     },
     {
         icon: HouseWifi,
-        title: "Fast Performance",
-        description: "Optimized solutions for maximum speed and efficiency.",
+        title: "End-to-End Solutions",
+        description: "From ideation to deployment and beyond, we support you at every stage of your digital transformation.",
         stats: "500+ Projects",
         iconBg: "bg-[#DCCAE9]", // Indigo
         iconColor: "text-[#6366F1]",
     },
     {
         icon: HouseWifi,
-        title: "Tech Support",
-        description: "24/7 technical assistance for all your business needs.",
+        title: "Commitment to Quality",
+        description: "We adhere to industry best practices, ensuring every project we deliver is flawless and reliable.",
         stats: "500+ Projects",
         iconBg: "bg-[#DCCAE9]", // Orange
         iconColor: "text-[#F97316]",

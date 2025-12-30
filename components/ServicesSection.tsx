@@ -131,7 +131,7 @@ export default function ServicesSection() {
                             <div className="relative z-10">
                                 <h3 className="text-[22px] md:text-[32px] font-bold text-[#111827] mb-6">Mobile App <br className="hidden md:block"/> Development</h3>
                                 <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
-                                    Our team creates feature-rich iOS and Android applications that combine advanced functionality with intuitive design for an engaging user experience.
+                                    Our team creates intuitive and feature-rich mobile applications for iOS and Android platforms. Whether it’s a customer-facing app or an internal enterprise tool, we combine functionality with design to ensure an engaging user experience.
                                 </p>
                             </div>
 
@@ -157,7 +157,7 @@ export default function ServicesSection() {
                                 <div className="w-full relative z-10">
                                     <h3 className="text-[22px] md:text-[32px] font-bold text-[#111827] mb-6">Software Development</h3>
                                     <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
-                                        We deliver robust, scalable, and secure software solutions—from enterprise applications to custom builds—ensuring high performance and seamless integration.
+                                        We deliver robust, scalable, and secure software solutions designed to meet the specific needs of businesses across industries. From enterprise applications to custom-built software, we ensure high performance and seamless integration with your workflows.
                                     </p>
                                 </div>
                                 <div className="w-full flex justify-center items-end mt-auto">
@@ -176,7 +176,7 @@ export default function ServicesSection() {
                                 <div className="w-full relative z-10">
                                     <h3 className="text-[22px] md:text-[32px] font-bold text-[#111827] mb-6">Web Development</h3>
                                     <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
-                                        We develop responsive, SEO-friendly websites ranging from high-speed static pages to dynamic web applications and comprehensive e-commerce platforms.
+                                        We design and develop responsive, fast-loading, and SEO-friendly websites that are tailored to meet your business goals. Our web development services range from creating static websites to dynamic web applications and e-commerce platforms.
                                     </p>
                                 </div>
                                 <div className="w-full flex justify-center items-end mt-auto">
@@ -220,7 +220,7 @@ export default function ServicesSection() {
                             <div className="relative z-10">
                                 <h3 className="text-[22px] md:text-[32px] font-bold text-[#111827] mb-6">Artificial  Intelligence</h3>
                                 <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
-                                    We leverage machine learning and natural language processing to build smart systems that enhance decision-making and provide predictive business insights.
+                                    We leverage the power of AI to develop smart solutions that enhance decision-making, optimize workflows, and provide predictive insights. Whether it’s machine learning models, natural language processing, or AI-driven systems, our solutions are tailored to your business challenges.
                                 </p>
                             </div>
                             <div className="w-full flex justify-center items-end mt-auto">
@@ -239,7 +239,7 @@ export default function ServicesSection() {
                             <div className="relative z-10">
                                 <h3 className="text-[22px] md:text-[32px] font-bold text-[#111827] mb-6">UI/UX  Design</h3>
                                 <p className="text-[#616161] text-[15px] leading-[19px] mb-6">
-                                    Our design-first approach ensures every interface is visually appealing and user-friendly, aligning with your brand to maximize satisfaction and engagement.
+                                    At Ellipza Technologies, we believe design is at the core of any successful digital product. Our UI/UX design team ensures every interface is visually appealing, user-friendly, and aligned with your brand identity to maximize engagement and satisfaction.
                                 </p>
                             </div>  
                             <div className="w-full flex justify-center items-end mt-auto">

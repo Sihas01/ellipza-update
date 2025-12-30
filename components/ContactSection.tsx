@@ -132,7 +132,7 @@ export default function ContactSection() {
                                         <path d="M13 7.99999C15.103 7.99999 16 8.89699 16 11H18C18 7.77499 16.225 5.99999 13 5.99999V7.99999ZM16.422 13.443C16.2299 13.2683 15.9774 13.1752 15.7178 13.1832C15.4583 13.1912 15.212 13.2998 15.031 13.486L12.638 15.947C12.062 15.837 10.904 15.476 9.71204 14.287C8.52004 13.094 8.15904 11.933 8.05204 11.361L10.511 8.96699C10.6975 8.78612 10.8062 8.53982 10.8142 8.2802C10.8222 8.02059 10.7289 7.76804 10.554 7.57599L6.85904 3.51299C6.68408 3.32035 6.44092 3.2035 6.18119 3.18725C5.92146 3.17101 5.66564 3.25665 5.46804 3.42599L3.29804 5.28699C3.12515 5.46051 3.02196 5.69145 3.00804 5.93599C2.99304 6.18599 2.70704 12.108 7.29904 16.702C11.305 20.707 16.323 21 17.705 21C17.907 21 18.031 20.994 18.064 20.992C18.3086 20.9783 18.5394 20.8747 18.712 20.701L20.572 18.53C20.7415 18.3325 20.8273 18.0768 20.8113 17.817C20.7952 17.5573 20.6785 17.3141 20.486 17.139L16.422 13.443Z" fill="#1D1D1B" />
                                     </svg>
 
-                                    <span className="text-[#1D1D1B] font-normal text-[16px]">+1012 3456 789</span>
+                                    <span className="text-[#1D1D1B] font-normal text-[16px]">+94 717 083 004</span>
                                 </div>
 
                                 <div className="flex items-center gap-1">
@@ -207,7 +207,7 @@ export default function ContactSection() {
                                 </div>
                                 <div className="border-b border-gray-300 focus-within:border-black transition-colors pb-1">
                                     <label className="block text-[16px] font-bold text-gray-900 mb-2">Phone Number</label>
-                                    <input type="tel" placeholder="+1 012 3456 789" className="w-full bg-transparent outline-none text-gray-600 placeholder-gray-400 py-1" />
+                                    <input type="tel" placeholder="+94 717 083 004" className="w-full bg-transparent outline-none text-gray-600 placeholder-gray-400 py-1" />
                                 </div>
                             </div>
 
