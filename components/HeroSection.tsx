@@ -19,12 +19,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5 }}
             className="inline-flex p-[1px] rounded-full bg-gradient-to-r from-[#7D43A2] to-[#5393DF] mb-8 shadow-sm"
           >
-            <div className="px-4 py-1.5 rounded-full bg-white flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#7D43A2] to-[#5393DF]"></div>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7D43A2] to-[#5393DF] text-xs font-bold">
-                Empowering Innovation, Elevating Experiences
-              </span>
-            </div>
+           
           </motion.div>
 
           {/* Heading */}
@@ -81,7 +76,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                   <h3 className="text-white font-bold text-sm md:text-lg mb-1">AI Solutions</h3>
-                  <p className="text-white text-[10px] font-normal md:text-xs leading-snug">Lorem ipsum dolor sit amet, consur adipiscing elit.</p>
+                  <p className="text-white text-[10px] font-normal md:text-xs leading-snug">Smart AI for real-world problems.</p>
                 </div>
               </motion.div>
 
@@ -90,8 +85,8 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex items-center justify-between">
                   <div>
-                    <h3 className="text-white font-bold text-sm md:text-lg mb-1">Real Time Deployment Metrics</h3>
-                    <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
+                    <h3 className="text-white font-bold text-sm md:text-lg mb-1">Real-Time Deployment Metrics</h3>
+                    <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Monitor systems in real time.</p>
                   </div>
                   <div className="w-8 h-8 md:w-10 md:h-10 rounded-full  flex items-center justify-center backdrop-blur-sm shrink-0 ml-2">
                     <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +103,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                   <h3 className="text-white font-bold text-sm md:text-lg mb-1">Enterprise Security</h3>
-                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
+                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Security built from day one.</p>
                 </div>
               </motion.div>
 
@@ -117,7 +112,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                   <h3 className="text-white font-bold text-sm md:text-lg mb-1">Modern Look</h3>
-                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
+                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Clean, modern user experiences.</p>
                 </div>
               </motion.div>
             </div>
@@ -130,7 +125,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                   <h3 className="text-white font-bold text-sm md:text-lg mb-1">200+ API Ready</h3>
-                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Lorem ipsum dolor sit amet.</p>
+                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Easy integrations. Built to scale.</p>
                 </div>
               </motion.div>
 
@@ -139,7 +134,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
                   <h3 className="text-white font-bold text-sm md:text-lg mb-1">Best Marketing</h3>
-                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
+                  <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Data-driven growth strategies.</p>
                 </div>
               </motion.div>
 
@@ -149,7 +144,7 @@ export default function HeroSection() {
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex items-center justify-between">
                   <div>
                     <h3 className="text-white font-bold text-sm md:text-lg mb-1">Remote first Culture</h3>
-                    <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
+                    <p className="text-white font-normal text-[10px] md:text-xs leading-snug">Global team. Faster delivery.</p>
                   </div>
                   <div className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center backdrop-blur-sm shrink-0 ml-2">
                     <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
