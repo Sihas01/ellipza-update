@@ -161,7 +161,7 @@ export default function AboutUsSection() {
 
                             <div className="mt-14 md:mt-20 flex flex-col justify-end h-full ">
                                 <p className="text-[12px] md:text-sm font-bold text-gray-900 mb-1 leading-tight mt-2 md:mt-0">Powered by smart integrations</p>
-                                <h3 className="text-2xl md:text-[50px] font-bold text-[#111827] mb-1">$ <Counter from={0} to={3.2} decimals={1} /> <span className="text-lg md:text-2xl text-[#616161] font-medium">M+</span></h3>
+                                <h3 className="text-2xl md:text-[50px] font-bold text-[#111827] mb-1">$ <Counter from={0} to={1.2} decimals={1} /> <span className="text-lg md:text-2xl text-[#616161] font-medium">M+</span></h3>
                                 <p className="text-[12px] md:text-xs text-[#616161] font-medium leading-tight">Revenue optimized for our clients</p>
                             </div>
                         </motion.div>
@@ -211,7 +211,7 @@ export default function AboutUsSection() {
                                     </div>
                                 ))}
                             </div>
-                            <span className="font-bold text-gray-600 text-[10px] md:text-sm whitespace-normal leading-tight">Trusted by 500+ CEOs</span>
+                            <span className="font-bold text-gray-600 text-[10px] md:text-sm whitespace-normal leading-tight">Trusted by 10+ CEOs</span>
                         </motion.div>
 
                         {/* Performance Card */}
@@ -255,7 +255,7 @@ export default function AboutUsSection() {
 
                         <div className="relative z-10 flex items-center justify-between mt-auto pt-8 ">
                             <div>
-                                <h3 className="text-6xl font-bold mb-1"><Counter from={0} to={49} />+</h3>
+                                <h3 className="text-6xl font-bold mb-1"><Counter from={0} to={14} />+</h3>
                                 <p className="text-white text-sm font-medium mt-3">Projects completed <br /> successfully</p>
                             </div>
 

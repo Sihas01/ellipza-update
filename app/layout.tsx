@@ -19,8 +19,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Elipza",
-  description: "Elipza Official Website",
+  title: "Ellipza Technologies",
+  description: "Ellipza Technologies delivers custom software, web & mobile apps, UI/UX design, and AI solutions for startups and enterprises since 2021.",
+  icons: {
+    icon: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({
